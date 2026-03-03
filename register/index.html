@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="form-title">
+            <span>·</span> Registration <span>Form</span> <span>·</span>
+        </h1>
+
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">
+                    <span class="required">*</span> Name
+                </label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">
+                    <span class="required">*</span> Email address
+                </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="">Select a country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">
+                    <span class="required">*</span> Phone
+                </label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group password-toggle">
+                <label for="password">
+                    <span class="required">*</span> Password
+                </label>
+                <input type="password" id="password" name="password" placeholder="Create a secure password" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()"> </span>
+
+            </div>
+
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms" class="checkbox-text">
+                    I agree to the terms and conditions. By creating an account, I acknowledge that I have read and
+                    accept the
+                    platform's privacy policy and terms of service.
+                </label>
+            </div>
+
+
+            <button type="submit">CREATE ACCOUNT</button>
+
+            <div class="signin-text">
+                Already have an account? <a href="#signin">Sign in</a>
+            </div>
+            
+        </form>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
